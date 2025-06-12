@@ -18,22 +18,22 @@ VARCHAR এবং CHAR দুইটি ডাটা টাইপ ই SQL এ ব
 # Explain the purpose of the WHERE clause in a SELECT statement.
 SQL এর মধ্যে WHERE clause টি অত্যন্ত গুরুত্বপূর্ণ।এটি মূলত কন্ডিশন বা শর্ত সেট করতে ব্যবহৃত হয়ে থাকে।SQL এ বিভিন্ন ধরনের অপারেশন চালানোর সময় যদি আমরা শর্ত আরোপ করতে চাই তাহলে এই clause টি ব্যবহার করে সহজেই কাজ করতে পারি।SELECT,UPDATE,DELETE অপারেশন চালাতে গেলে যদি আমরা নির্দিষ্ট কন্ডিশন সেট করতে চাই সেক্ষেত্রে WHERE ব্যবহার করতে পারি।SELECT statement এর ক্ষেত্রে WHERE এর ব্যবহার নিচের উদাহরণের মাধ্যমে বুঝতে পারি। 
 
-SELECT * FROM students 
-WHERE age = 20;
+SELECT * FROM students <br>
+WHERE age = 20; <br>
 এইখানে আমরা যদি WHERE ব্যবহার না করতাম তাহলে এটি সকল student রিটার্ন করতো।কিন্তু যখন বলা হয়েছে WHERE age = 20,এখন শুধুমাত্র যাদের বয়স ২০ শুধুমাত্র সেসব Student দের রিটার্ন করবে।
 
 # How can you modify data using UPDATE statements?
 SQL এর মধ্যে কোনো ডেটাকে মোডিফাই বা পরিবর্তন করতে চাইলে UPDATE স্টেটমেন্টটি ব্যবহার করা হয়ে থাকে।কোনো টেবিলের মধ্যে সংরক্ষণকৃত ডাটাসেটকে নানা কারণে আমাদের পরিবর্তন করা লাগতে পারে।সেক্ষেত্রে আমরা এই clause টি প্রয়োগ করে থাকি।এমনকি আমাদের প্রয়োজন অনুসারে বিভিন্ন কন্ডিশন সেট করেও আপডেট অপারেশন চালাতে পারি।
 
-যেমন - 
-UPDATE boys 
-SET status = 'student';
+যেমন - <br>
+UPDATE boys <br>
+SET status = 'student'; <br>
 এখানে boys নামক একটি টেবিলে UPDATE অপারেশন চালানো হয়েছে।টেবিলের প্রতিটি boy এর status পরিবর্তন করে রাখা হবে 'student'.এইভাবে শর্তহীন ভাবে UPDATE অপারেশন প্রয়োগ করা যায়।
 
-আবার,
-UPDATE boys
-SET status = 'adult'
-WHERE age > 20
+আবার, <br>
+UPDATE boys <br>
+SET status = 'adult' <br>
+WHERE age > 20; <br>
 এখানে boys নামক টেবিলেটির উপর UPDATE অপারেশন চালানো হয়েছে।যাদের বয়স ২০ এর অধিক তাদের প্রত্যেকের status পরিবর্তন করে রাখা হবে 'adult'.এভাবে শর্ত প্রয়োগ করেও UPDATE অপারেশন চালিয়ে ডেটা পরিবর্তন করা যায়।
 
 
