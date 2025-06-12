@@ -1,4 +1,4 @@
--- Active: 1748881118326@@127.0.0.1@5432@conservation_db
+
 
 -- Creating 'rangers' table
 CREATE Table rangers (
